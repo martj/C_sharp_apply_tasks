@@ -1,0 +1,45 @@
+package Main;
+
+import java.util.Arrays;
+
+public class Main {
+public static void main
+
+	{
+	char[][] matrix = { { 'i', 'v', 'a', 'n' }, { 'e', 'v', 'n', 'h' }, { 'i', 'n', 'a', 'v' }, { 'm', 'v', 'v', 'n' },
+			{ 'q', 'r', 'i', 't' } };
+
+	char[] word = { 'i', 'v', 'a', 'n' };
+
+	char[] up = new char[word.length];
+	char[] down = new char[word.length];
+	char[] left = new char[word.length];
+	char[] right = new char[word.length];
+	int counter = 0;
+
+	for(
+	int i = 0;i<matrix[0].length;i++)
+
+	{
+		for (int j = 0; j < word.length; j++) {
+			for(int a = 0; a <= word.length; a++){
+				up[a] = matrix[i-a];
+				down[a] = matrix[i+a];
+				right[a] = matrix[j+a];
+				left[a] = matrix[j-a];
+			}
+			
+			 if (boolean retval=Arrays.equals(word,up){
+				 counter++;
+			 }else if( boolean retval=Arrays.equals(word,down)){
+				 counter++;
+			 }else if( boolean retval=Arrays.equals(word,right)){
+				 counter++;
+			 }else if( boolean retval=Arrays.equals(word,left)){
+				 counter++;
+			 }
+			 
+		}
+	}
+
+}
